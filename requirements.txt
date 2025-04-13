@@ -1,10 +1,13 @@
- # requirements.txt
-streamlit
-requests
-Pillow
-# Choose ONE of the PDF libraries below based on which one the final app code uses:
-# PyMuPDF # If using fitz
-PyPDF2 # If using PyPDF2 (as in the provided code)
-
-# Note: Ollama itself needs to be installed and running separately on your system.
-# This app communicates with the running Ollama service via HTTP requests.
+streamlit>=1.30.0,<2.0.0
+requests>=2.28.0,<3.0.0
+python-dotenv>=1.0.0,<2.0.0
+pillow>=9.0.0,<11.0.0
+pypdf2>=3.0.0,<4.0.0
+langchain>=0.1.0,<0.2.0
+tiktoken>=0.5.0,<0.7.0
+# Web Search Dependencies
+duckduckgo-search>=5.0.0,<6.0.0
+beautifulsoup4>=4.12.0,<4.13.0 # <-- Add back
+# Removed crawl4ai and playwright
+# Copy Button Dependency
+st-copy-to-clipboard>=0.1.0,<0.2.0
